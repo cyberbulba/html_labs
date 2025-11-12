@@ -1,0 +1,258 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUeJMyxnCxGq9W6pHX5wmhZ8irrfjUQVYOg&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main {
+  margin-top: 80px;
+}
+p {
+    text-align: left;
+    color: black;
+    font-size: 16pt;
+    transition: transform 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p:hover {
+    transform: scale(0.9);
+    animation: swap-color 3s;
+}
+h1 {
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+h2 {
+    text-align: center;
+    color: brown;
+    animation: text-pulsing 2s infinite;
+}
+hr {
+    border-top: 2px solid brown;
+    margin: 20px 0;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+table:hover {
+    transform: scale(1.1);
+}
+td, th {
+    border: 3px solid black;
+    padding: 16px;
+    text-align: center;
+}
+img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border: 4px double brown;
+    transition: transform 2s ease;
+    margin-top: 30px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding-left: 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://img.freepik.com/premium-photo/misty-autumn-path-through-crimson-leaves_257778-12185.jpg?semt=ais_hybrid&w=740&q=80");
+    border: 2px dotted brown;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 30pt;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    border: 2px solid #8b0000;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    display: block;
+    font-weight: bold;
+}
+section {
+    scroll-margin-top: 80px;
+    margin-top: 50px;
+    margin-down: 50px;
+}
+img:hover {
+    transform: scale(1.2);
+}
+.my-text {
+    text-align: center;
+    color: black;
+    font-size: 20pt;
+}
+.relative {
+    position: relative;
+    bottom: 200px;
+    right: 380px;
+}
+.absolute {
+    position: absolute;
+    top: 650px;
+    right: 550px;
+}
+.img-float {
+    float: left;
+    margin: 0 20px 15px 0;
+}
+.float-clear {
+    clear: both;
+}
+@keyframes text-pulsing {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes swap-color {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    50% {
+        color: brown;
+    }
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+@media (max-width: 768px) {
+    p {
+        font-size: 14pt;
+    }
+    h1 {
+        font-size: 22pt;
+        padding-top: 60px;
+    }
+    h2 {
+        font-size: 16pt;
+    }
+    .my-text {
+        font-size: 14pt;
+    }
+
+    nav {
+        height: auto;
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    ul {
+        flex-direction: column;
+        width: auto;
+        font-size: 20pt;
+        gap: 7px;
+    }
+    li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    a {
+        padding: 6px 12px;
+        font-size: 16pt;
+    }
+
+    img {
+        width: 70%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    table {
+        width: 90%;
+        font-size: 12pt;
+    }
+    td, th {
+        padding: 8px;
+        font-size: 12pt;
+    }
+
+    main {
+        margin-top: 230px;
+    }
+    section {
+        margin-top: 20px;
+    }
+    .relative, .absolute {
+        position: static;
+    }
+
+    .img-float {
+        float: none;
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 10px;
+    }
+    main {
+       margin-top: 200px;
+    }
+    p {
+        font-size: 12pt;
+        margin: 8px 0;
+    }
+    h1 {
+        font-size: 20pt;
+        padding-top: 50px;
+    }
+    h2 {
+        font-size: 14pt;
+    }
+    .my-text {
+        font-size: 8pt;
+    }
+    a {
+        font-size: 12pt;
+        padding: 5px 10px;
+    }
+    img {
+        width: 60%;
+        margin-top: 15px;
+    }
+    table {
+        font-size: 10pt;
+        width: 60%;
+    }
+    td, th {
+        padding: 6px;
+        font-size: 10pt;
+    }
+    section {
+        margin-top: 15px;
+    }
+}
